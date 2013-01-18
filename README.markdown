@@ -3,6 +3,9 @@ puppet-network
 
 Manage non-volatile network configuration.
 
+Travis Test status:
+[![Build Status](https://travis-ci.org/robetstarmer/puppet-network.png)](https://travis-ci.org/robertstarmer/puppet-network)
+
 Examples
 --------
 
