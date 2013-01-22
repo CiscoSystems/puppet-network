@@ -3,8 +3,7 @@ puppet-network
 
 Manage non-volatile network configuration.
 
-Travis Test status:
-[![Build Status](https://travis-ci.org/robetstarmer/puppet-network.png)](https://travis-ci.org/robertstarmer/puppet-network)
+Travis Test status: [![Build Status](https://travis-ci.org/adrienthebo/puppet-network.png?branch=master)](https://travis-ci.org/adrienthebo/puppet-network)
 
 Examples
 --------
@@ -51,6 +50,16 @@ Dependencies
 ------------
 
 The debian interfaces provider requires the FileMapper mixin, available at https://github.com/adrienthebo/puppet-filemapper
+
+The network_config type requires the Boolean mixin, available at https://github.com/adrienthebo/puppet-boolean
+
+Note: you many also need to update your master's plugins (run on your puppet master):
+
+    puppet agent -t --noop
+
+Or on puppet 2.7/3.x:
+
+    puppet plugin download
 
 - - -
 
